@@ -8,7 +8,7 @@ import yaml
 def get_base_uri_from_path(path, extension):
 
     # .\_pages\page-a\index.mustache => page-a
-    # .\_pages\index.mustache => home
+    # .\_pages\index.mustache => homepage
 
     base_uri = path.replace(os.sep, '/')
 
@@ -32,7 +32,7 @@ def get_base_uri_from_path(path, extension):
         base_uri = base_uri[:-1]
 
     # page-a
-    # home
+    # homepage
 
     return base_uri
 
