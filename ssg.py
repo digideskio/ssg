@@ -40,7 +40,7 @@ def get_base_uri_from_path(path, extension):
 def get_templates(extension):
     # Index all index template files and their associated config file
     templates = {}
-    for root, directories, filenames in os.walk('.'):
+    for root, directories, filenames in os.walk('.' + os.sep + '_pages'):
         for filename in filenames:
             file_path = os.path.join(root, filename)
             if file_path.endswith('index' + extension):
