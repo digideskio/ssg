@@ -1,0 +1,8 @@
+# A 'url' attribute is automatically added for each page
+# Keep your homepage mapped to the 'homepage' reserved key
+
+homepage:
+    link-text: Go to homepage
+
+page-a:
+    link-text: Go to page A
